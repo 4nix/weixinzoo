@@ -1,0 +1,99 @@
+.main {
+  margin: auto;
+  width: 700rpx;
+}
+
+.section {
+  margin: 20rpx 0;
+  padding: 40rpx 0rpx;
+  background-color: #00b359;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  margin: 0 0 15rpx 0;
+  font-size: 40rpx;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10rpx;
+}
+
+.item {
+  padding: 8rpx 0;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff; 
+  width: 150rpx;
+  border: 0;
+  margin: 10rpx;
+  box-shadow: 4rpx 4rpx 10rpx #666666;
+  background-color: #cfbd7b;
+}
+
+.dashang {
+  text-align: center;
+}
+
+.tips {
+  text-align: left;
+  font-size: 26rpx;
+  color: #bf8040;
+  width: 460rpx;
+  margin: auto;
+}
+
+.image {
+  width: 460rpx;
+  height: 460rpx;
+}
+
+.xishucaoyuan {
+  background-color: #d39e6a;
+}
+
+.conglin {
+  background-color: #8aa267;
+}
+
+.shanmai {
+  background-color: #b6b4c2;
+}
+
+.aozhou {
+  background-color: #c87766;
+}
+
+.jidi {
+  background-color: #c0e3e9;
+}
+
+.zhuluoji {
+  background-color: #99c477;
+}
+
+.aolinpisi {
+  background-color: #c7e9dc;
+}
+
+.huayuan {
+  background-color: #b3fc95;
+}
+
+.bang {
+  color: #fff;
+  font-size: 36rpx;
+  background-color: #a96c55;
+  width: 240rpx;
+  height: 80rpx;
+  margin: 20rpx 0;
+  text-align: center;
+  line-height: 80rpx;
+  box-shadow: 4rpx 8rpx 8rpx #6e3e3c; 
+  display: inline-block;
+  margin-right: 20rpx;
+}

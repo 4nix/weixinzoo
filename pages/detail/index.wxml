@@ -1,0 +1,20 @@
+<view class='main'>
+  <!-- <navigator class='return' open-type='navigateBack'>返回</navigator> -->
+  <navigator class='return' url="../main/index">返回</navigator>
+  <view class='title'>{{detail.name}}</view>
+  <view class='list'>
+    <block wx:for="{{detail.types}}" wx:key="" wx:for-item="item">
+    <view class='item'>
+      <view class='name'>{{item.name}}</view>
+      <view class='img'><image mode="widthFix" src="{{item.img}}"></image></view>
+      <view class='desc'>{{item.desc}}</view>
+      <view class='baby'>
+        <block wx:for="{{item.baby}}" wx:key="" wx:for-item="skill">
+          <view>{{skill}}</view>
+        </block>
+      </view>
+    </view>
+    </block>
+  </view>
+</view>
+<ad unit-id="adunit-8ff39d225583599d"></ad>

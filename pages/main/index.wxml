@@ -1,0 +1,26 @@
+<ad unit-id="adunit-3bd648c594a141d4"></ad>
+<view class='main'>
+  <navigator class='bang' url="../bang/index">宝宝能力榜</navigator>
+  <navigator class='bang' url="../draw/index">写日记</navigator>
+
+  <block wx:for='{{area}}' wx:for-item='item' wx:key="" wx:for-index="aIndex">
+    <view class='section {{item.classname}}'>
+      <view class='title'>{{item.name}}</view>
+      <view class='list'>
+        <block wx:for='{{item.races}}' wx:key="" wx:for-index="rIndex" wx:for-item='race'>
+          <navigator class='item' url="../detail/index?race={{aIndex}}&type={{rIndex}}">{{race.name}}</navigator>
+        </block>
+      </view>
+    </view>
+  </block>
+
+  <view class="dashang">
+    <view class="tips">1. 欢迎大家去社区帮忙指正错误数据和补充缺失数据,也可去微博@little5z联系我</view>
+    <view class="tips">2. 小弟我不是做设计的,所以页面丑了点,有修改和其他意见的也可以告诉我,我尽量上班摸鱼满足大家</view>
+    <image bindtap='previewImage' class="image" src="http://wx1.sinaimg.cn/mw690/6ff2374dgy1fqwup9gzitj20w00w0wgo.jpg"></image>
+    <view class="tips">1.点击打开大图</view>
+    <view class="tips">2.长按图片识别二维码</view>
+    <view class="tips">3.打赏</view>
+    <view class="tips">4.你就拥有了我!!!...的膝盖( ˙灬˙ )</view>
+  </view>
+</view>

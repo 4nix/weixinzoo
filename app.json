@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/main/index",
+    "pages/detail/index",
+    "pages/bang/index",
+    "pages/draw/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#a96c55",
+    "navigationBarTitleText": "疯狂动物园图鉴",
+    "navigationBarTextStyle":"black"
+  }
+}
