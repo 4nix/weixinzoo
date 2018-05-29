@@ -1,0 +1,29 @@
+.main {
+  padding: 20rpx;
+}
+
+.textarea {
+  border: 1px solid #eee;
+  height: 200rpx;
+}
+
+.canvas {
+  width: 510rpx;
+  height: 640rpx;
+  margin: auto;
+}
+.writeBox {
+  text-align: center;
+}
+.write {
+  color: #fff;
+  font-size: 36rpx;
+  background-color: #a96c55;
+  width: 240rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  box-shadow: 4rpx 8rpx 8rpx #6e3e3c; 
+  display: inline-block;
+  margin: auto;
+}

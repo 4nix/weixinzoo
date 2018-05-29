@@ -1,5 +1,15 @@
-<canvas canvas-id="myCanvas"
-  style="margin: 5px; border:1px solid #d3d3d3;"
-  bindtouchstart="start"
-  bindtouchmove="move"
-  bindtouchend="end"/>
+<view class='main'>
+  <view>
+    <textarea maxlength='60' class='textarea' bindinput='handleText' placeholder='{{defaultVal}}' />
+  </view>
+  <view class='writeBox'>
+    <button class="write" bindtap='submit'>记下来</button>
+  </view>
+  <view>
+    <canvas canvas-id="myCanvas" class="canvas"
+    />
+  </view>
+  <view class='img'>
+    <image mode="widthFix" src="{{img}}"></image>
+  </view>
+</view>

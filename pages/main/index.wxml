@@ -1,7 +1,7 @@
 <ad unit-id="adunit-3bd648c594a141d4"></ad>
 <view class='main'>
   <navigator class='bang' url="../bang/index">宝宝能力榜</navigator>
-  <navigator class='bang' url="../draw/index">写日记</navigator>
+  <!-- <navigator class='bang' url="../draw/index">写日记</navigator> -->
 
   <block wx:for='{{area}}' wx:for-item='item' wx:key="" wx:for-index="aIndex">
     <view class='section {{item.classname}}'>
