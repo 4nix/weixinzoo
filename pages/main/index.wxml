@@ -1,26 +1,29 @@
 <ad unit-id="adunit-3bd648c594a141d4"></ad>
 <view class='main'>
-  <navigator class='bang' url="../bang/index">宝宝能力榜</navigator>
-  <!-- <navigator class='bang' url="../draw/index">写日记</navigator> -->
+  <navigator class='bang' url="../bang/top" redirect="true">宝宝能力榜</navigator>
+  <navigator class='bang' url="../draw/index">写日记</navigator>
 
   <block wx:for='{{area}}' wx:for-item='item' wx:key="" wx:for-index="aIndex">
     <view class='section {{item.classname}}'>
       <view class='title'>{{item.name}}</view>
       <view class='list'>
         <block wx:for='{{item.races}}' wx:key="" wx:for-index="rIndex" wx:for-item='race'>
-          <navigator class='item' url="../detail/index?race={{aIndex}}&type={{rIndex}}">{{race.name}}</navigator>
+          <navigator class='item' url="../detail/index?race={{aIndex}}&type={{rIndex}}" redirect="true">{{race.name}}</navigator>
         </block>
       </view>
     </view>
   </block>
 
   <view class="dashang">
-    <view class="tips">1. 欢迎大家去社区帮忙指正错误数据和补充缺失数据,也可去微博@little5z联系我</view>
-    <view class="tips">2. 小弟我不是做设计的,所以页面丑了点,有修改和其他意见的也可以告诉我,我尽量上班摸鱼满足大家</view>
+    <view class="tips">1.终于把所有的图都换了, 现在应该没有不清晰的, 也把绝大部分技能修正了, 目前除了神灯企鹅和刚出的异齿龙, 基本都全了</view>
+    <view class="tips">2.摸鱼时间太少,更新有点慢</view>
+    <view class="tips">3. 2018.8.19 - 修改部分剑龙技能错误, 更换大部分图鉴, 补全了花园动物信息</view>
     <image bindtap='previewImage' class="image" src="http://wx1.sinaimg.cn/mw690/6ff2374dgy1fqwup9gzitj20w00w0wgo.jpg"></image>
     <view class="tips">1.点击打开大图</view>
     <view class="tips">2.长按图片识别二维码</view>
     <view class="tips">3.打赏</view>
-    <view class="tips">4.你就拥有了我!!!...的膝盖( ˙灬˙ )</view>
+    <view class="tips">4.你就拥有了我!!!( ˙灬˙ )</view>
+    <view class="tips"><image class="emoji" src="http://wx1.sinaimg.cn/mw690/6ff2374dly1ftyxdpbuxej201t01t0l5.jpg"></image>
+    </view>
   </view>
 </view>

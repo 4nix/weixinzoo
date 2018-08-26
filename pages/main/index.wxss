@@ -51,6 +51,10 @@
   width: 460rpx;
   height: 460rpx;
 }
+.emoji {
+  width: 100rpx;
+  height: 100rpx;
+}
 
 .xishucaoyuan {
   background-color: #d39e6a;

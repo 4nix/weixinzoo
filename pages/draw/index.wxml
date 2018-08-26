@@ -1,6 +1,8 @@
 <view class='main'>
   <view>
-    <textarea maxlength='60' class='textarea' bindinput='handleText' placeholder='{{defaultVal}}' />
+    <navigator class='return' url="../main/index" redirect="true">返回主页</navigator>
+    <text class="date">{{currentDay}}</text>
+    <textarea maxlength='40' class='textarea' value='{{textVal}}' bindinput='handleText' placeholder='{{placeholder}}' />
   </view>
   <view class='writeBox'>
     <button class="write" bindtap='submit'>记下来</button>
@@ -9,7 +11,11 @@
     <canvas canvas-id="myCanvas" class="canvas"
     />
   </view>
-  <view class='img'>
-    <image mode="widthFix" src="{{img}}"></image>
+  <view class='saveBox' style='display: {{showSaveBtn ? "":"none"}};'>
+    <button class="save" bindtap='savePic'>{{saveStatus ? '已保存,去相册查看' : '保存下来,给大家看看'}}</button>
   </view>
+  <view class='authBox' style='display: {{showSaveBtn ? "":"none"}};'>
+    <text class='authText' bindtap='saveAuth'>点击没反应?看看是不是没授权</text>
+  </view>
+  <ad unit-id="adunit-3bd648c594a141d4"></ad>
 </view>

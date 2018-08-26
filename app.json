@@ -3,6 +3,9 @@
     "pages/main/index",
     "pages/detail/index",
     "pages/bang/index",
+    "pages/bang/list",
+    "pages/bang/top",
+    "pages/bang/toplist",
     "pages/draw/index"
   ],
   "window":{

@@ -1,7 +1,13 @@
+<ad unit-id="adunit-8ff39d225583599d"></ad>
 <view class='main'>
   <!-- <navigator class='return' open-type='navigateBack'>返回</navigator> -->
-  <navigator class='return' url="../main/index">返回</navigator>
-  <view class='title'>{{detail.name}}</view>
+  
+  <navigator class='return' url="../main/index" redirect="true">返回主页</navigator>
+  
+  <view class='top'>
+    <view class='title'>{{detail.name}}</view>
+    <view class='detail'>{{detail.desc}}</view>
+  </view>
   <view class='list'>
     <block wx:for="{{detail.types}}" wx:key="" wx:for-item="item">
     <view class='item'>
@@ -9,12 +15,15 @@
       <view class='img'><image mode="widthFix" src="{{item.img}}"></image></view>
       <view class='desc'>{{item.desc}}</view>
       <view class='baby'>
-        <block wx:for="{{item.baby}}" wx:key="" wx:for-item="skill">
-          <view>{{skill}}</view>
+        <block wx:if="{{item.formatSkill.length > 0}}">
+          <block wx:if="{{item.formatSkill.length > 0}}" wx:for="{{item.formatSkill}}" wx:key="" wx:for-item="skill">
+            <view class="skill">{{skill}}</view>
+          </block>  
         </block>
+        <block wx:else><view>待补充</view></block>
       </view>
     </view>
     </block>
   </view>
+  <navigator class='return' url="../main/index" redirect="true">返回主页</navigator>
 </view>
-<ad unit-id="adunit-8ff39d225583599d"></ad>

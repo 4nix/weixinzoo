@@ -1,0 +1,22 @@
+<ad unit-id="adunit-8ff39d225583599d"></ad>
+<view class='main'>
+  <navigator class='return' url="../bang/top">返回</navigator>
+  <!-- <navigator class='return' open-type='navigateBack'>返回</navigator> -->
+  <view class='title'>技能排行榜</view>
+  <view class='list'>
+    <block wx:for="{{orderArr}}" wx:key="groupId" wx:for-item="group">
+    <view class='item'>
+      <view class='name'>{{skillGroup[group]}}</view>
+      <view class='group'>
+        <block wx:for="{{maxGroup[group]}}" wx:key="" wx:for-item="item">
+          <navigator url="../detail/index?race={{item.land}}&type={{item.race}}&return=1">
+          <view class='baby'>
+          {{item.name}}
+          </view>
+          </navigator>
+        </block>
+      </view>
+    </view>
+    </block>
+  </view>
+</view>

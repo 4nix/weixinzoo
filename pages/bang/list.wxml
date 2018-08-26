@@ -1,0 +1,18 @@
+<view class='main'>
+  <navigator class='return' url="../main/index">返回</navigator>
+  <!-- <navigator class='return' open-type='navigateBack'>返回</navigator> -->
+  <view class='title'>技能排行榜</view>
+  <view class='list'>
+    <block wx:for="{{list}}" wx:key="" wx:for-item="item">
+    <view class='item'>
+      <view class='name'>{{item.title}}  （{{item.data}}）</view>
+      <view class='group'>
+        <block wx:for="{{item.items}}" wx:key="" wx:for-item="name">
+          <view class='baby'>{{name}}</view>
+        </block>
+      </view>
+    </view>
+    </block>
+  </view>
+</view>
+<ad unit-id="adunit-8ff39d225583599d"></ad>

@@ -4,18 +4,22 @@
 
 .textarea {
   border: 1px solid #eee;
-  height: 200rpx;
+  height: 160rpx;
+  width: 670rpx;
+  color: white;
+  padding: 20rpx;
 }
 
 .canvas {
   width: 510rpx;
   height: 640rpx;
-  margin: auto;
+  margin: 20rpx auto;
 }
-.writeBox {
+.writeBox, .saveBox, .authBox {
   text-align: center;
+  margin-top: 20rpx;
 }
-.write {
+.write, .save {
   color: #fff;
   font-size: 36rpx;
   background-color: #a96c55;
@@ -26,4 +30,15 @@
   box-shadow: 4rpx 8rpx 8rpx #6e3e3c; 
   display: inline-block;
   margin: auto;
+}
+
+.save {
+  width: 480rpx;
+}
+.authText {
+  font-size: 28rpx;
+  color: #1d35ea;
+}
+.date {
+  color: #fff;
 }

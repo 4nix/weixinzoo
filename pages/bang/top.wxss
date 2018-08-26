@@ -1,0 +1,43 @@
+.main {
+  padding: 20rpx;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  font-size: 50rpx;
+}
+
+.name {
+  font-size: 32rpx;
+  color: #fff;
+  background-color: #c68887;
+  padding: 8rpx;
+}
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10rpx;
+}
+
+.baby {
+  padding: 8rpx 10rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #fff; 
+  min-width: 150rpx;
+  border: 0;
+  margin: 10rpx;
+  box-shadow: 4rpx 4rpx 10rpx #666666;
+  background-color: #cfbd7b;
+}
+
+.list {
+  background-color: #464f4e;
+}
+
+.more {
+  float: right;
+  margin-right: 20rpx;
+}
